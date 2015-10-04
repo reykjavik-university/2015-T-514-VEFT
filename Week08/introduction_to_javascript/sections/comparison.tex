@@ -1,0 +1,41 @@
+\section{Comparison}\label{sec:comparison}
+In this section we discuss comparison operators that can be used to compare objects in JavaScript.
+
+
+\subsection{Equality operators}
+There are two types of Equality operators called Equality, and strict equality. They are \texttt{==} and \texttt{===} respectively.
+
+The equality operator converts the operands if they are not of the same type. Here is an example.
+
+\begin{lstlisting}
+> 1 == '1'
+true
+\end{lstlisting}
+
+The \texttt{number} operator is casted to string for the equality check. When we use this equality operator the operands do need to be of the same type.
+
+The strict equality on the other hand will not evaluate anything to \texttt{true} unless they are of the same type.
+
+\begin{lstlisting}
+> 1 === '1'
+false
+\end{lstlisting}
+
+Note that when you compare mutable objects, such as Arrays and Objects your a comparing the pointer to the object. They will not evaluate to \texttt{true} even if they are the same. Only if their pointers are the same. When you have immutable objects, such as numbers and booleans, their value are compared. 
+
+When in doubt which one to use, always use strict equality. In matter of fact, always use strict equality unless you know what you are doing.
+
+The negation equality check works the same, there we have \texttt{!=} and \texttt{!==}. The follow the same rules as we described above.
+
+\subsection{Relational operators}
+JavaScript supports the same relational operators as in C or Java. They are explained with examples in the following listing.
+
+\begin{lstlisting}
+> 2 > 1
+true
+> 3 <= 3
+true
+> 3 <= 3 && 2 != 2
+false
+\end{lstlisting}
+

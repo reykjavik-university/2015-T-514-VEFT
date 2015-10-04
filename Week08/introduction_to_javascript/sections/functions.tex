@@ -1,0 +1,111 @@
+\section{Functions}\label{sec:functions}
+In this section we introduce functions in JavaScript. Here we cover two types of function types, namely the functions defined with the \texttt{function} keyword and Fat Arrow Functions.
+
+\subsection{Defining functions with the \texttt{function} keyword}
+Since ES6, JavaScript now provides two ways to implement functions. The one prior ES6 uses the keyword \texttt{function}. Functions using that keyword are defined as follows.
+
+\begin{lstlisting}
+function add(x, y) {
+    return x + y
+}
+
+add(1, 4)
+\end{lstlisting}
+
+Here we define a named function, with the name add which takes two arguments, \texttt{x} and \texttt{y}, and returns the sum of them. If a function does not have a return statement, then \texttt{undefined} is returned.
+
+As stated above, functions are also objects and can be bound to variables and passed into other functions as arguments. This phenomenon is often called Higher Order Functions\footnote{\url{https://en.wikipedia.org/wiki/Higher-order_function}}.
+
+\begin{lstlisting}
+> const d = function(x, y) {return x + y};
+undefined
+> d(2, 5)
+7
+> const b = d;
+undefined
+> b(2, 5)
+7
+>
+\end{lstlisting}
+
+Here we create Anonymous function\footnote{\url{https://en.wikipedia.org/wiki/Anonymous_function}} and we assign it to a variable with the name \texttt{d}. Then later, we assign the same function to a new variable and use that variable to call the function.
+
+Here is a simple example how we can pass methods as parameters into functions.
+
+\begin{lstlisting}
+> let sayHello = function(name) { 
+   return "Hello " + name
+  }
+undefined
+> let sayGoodbye = function(name) {
+   return "See you later " + name
+  }
+undefined
+> function greet(name, f) { return f(name)}
+undefined
+> greet('hlysig', sayHello)
+'Hello hlysig'
+> greet('hlysig', sayGoodbye)
+'See you later hlysig'
+\end{lstlisting}
+
+This is a common pattern in JavaScript where function are passed in as call-back function when some unit of work has executed. We see more of that when we discuss the Node.js asynchronous model in section n.
+
+One little function caveat. It is not required to pass value for every argument of the function. If not given, that argument will be \texttt{undefined}.
+
+\begin{lstlisting}
+> const foo = function(a, b, c) {
+    console.log(a, b, c);
+};
+undefined
+> foo(1);
+1 undefined undefined
+\end{lstlisting}
+
+Where JavaScript functions accept less parameters then the ones that are defined, it would be strange if you couldn't add more then are defined in the argument list, right?\footnote{This makes no sense!}. Well, JavaScript has you covered. It is a good practice to validate that the arguments in functions have expected values. You have access to all the arguments passed into a given function with through \texttt{arguments} constant within the function. This features allows you to create functions with infinite\footnote{Bound to memory of course} arguments. Here is a simple example of how the \texttt{arguments} can be used to create a sum function.
+
+\begin{lstlisting}
+'use strict';
+
+const mysum = function() {
+  let sum = 0;
+  for (let i of arguments) {
+    sum += i;
+  }
+  return sum;
+};
+
+console.log(mysum(5, 2, 3));
+\end{lstlisting}
+
+\subsection{Fat Arrow functions}
+In ES6 new type of function was introduced, namely the Fat Arrow Functions\footnote{\url{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions}}. Now let's look at the syntactic difference between them and then the semantic difference.
+
+Arrow functions are always anonymous functions and there is no special keyword to define them. This is the syntax for Arrow Functions
+
+\begin{lstlisting}
+(argument1, .. argumentn) => {statement1, .. statementn}
+\end{lstlisting}
+
+If there is only one argument, then the parentheses can be omitted. If there is only one statement the braces can be omitted.
+
+\begin{lstlisting}
+const add = (x, y) => x+y;
+\end{lstlisting}
+
+If the body of the function is a single expression, then the value of that statement is automatically returned. If the body has more than one statement, you must explicitly return a value with the `return` keyword.
+
+This style of functions is shorter and is syntactically more beautiful, especially when it comes to call-back function as following example indicates.
+
+\begin{lstlisting}
+app.get('/news', function(req, res) {
+    res.send('Hello world');
+});
+
+
+app.get('/news', (req, res) => res.send('Hello world'));    
+\end{lstlisting}
+
+Arrow functions are not a replacement for the old-style functions where they are semantically different. The difference lays in the scoping value of object `this`. When using Fat Arrow functions lexically bind the \texttt{this} value, that is to the enclosing context where the old style functions behave differently on that matter.
+
+In this course this will not be of any problems. But we encourage students to look into the difference between those types of function and their handling of scopes.

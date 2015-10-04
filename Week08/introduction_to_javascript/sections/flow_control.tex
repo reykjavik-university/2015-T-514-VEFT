@@ -1,0 +1,47 @@
+\section{Controlling flow}\label{sec:flow_control}
+In this section we run through the flow control statements available in JavaScript. The controlling statments are similar to the once we know and love from other procedural OOP languages.
+
+\subsection{if-else}
+If and else are similar as in C or Java and have the following form.
+\begin{lstlisting}
+if (b1) {
+    // code
+} else if(b2) {
+    // code
+} else {
+}
+\end{lstlisting}
+
+The else-if and else are optional, as in the above mentioned languages. The statements \texttt{b1} and \texttt{b2} are evaluted to boolean value and the blocks are executed with respect to the output of that evaluation.
+
+The check can be other objects than boolean values and we say that the evaluation calculates Truthy and Falsy of the statements. The following list shows how different objects are evaluated to \texttt{true} in JavaScript.
+
+\begin{itemize}
+\item \texttt{if (true)}
+\item \texttt{if ({})}
+\item \texttt{if ([])}
+\item \texttt{if (42)}
+\item \texttt{if ("foo")}
+\item \texttt{if (new Date())}
+\end{itemize}
+
+The following list shows statements which will evaluate to false
+
+\begin{itemize}
+\item \texttt{if (false)}
+\item \texttt{if (null)}
+\item \texttt{if (undefined)}
+\item \texttt{if (0)}
+\item \texttt{if (NaN)}
+\item \texttt{if ('')}
+\end{itemize}
+
+\subsection{Switch}
+\url{https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/switch}
+
+\subsection{Exception handling}
+\url{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch}
+
+\subsection{Loops and iterations}
+\url{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration}
+

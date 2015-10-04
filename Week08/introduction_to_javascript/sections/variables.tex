@@ -1,0 +1,73 @@
+\section{Variables}\label{sec:variables}
+Let's start of by discussing variables and how they are defined in JavaScript. We begin here so that we can use variables in upcoming sections in our examples.
+
+In JavaScript we have three keywords to define variables, \texttt{var}, \texttt{let} and \texttt{const}. They pretty much do the same thing, that is, define variables for us to use, but their semantics are different.
+
+Since the release of ES6 it has been a debate if \texttt{var} should be avoided and that developers should always use \texttt{let} instead. Frankly, \texttt{var} is still part of the language and can still be used.
+
+Let's look at these keywords and how we can apply them. The talk about scopes in this section might seem little overwhelming at first. Scoping rules in JavaScript can be hard to grasp. The best way to learn the scoping rules is to make couple of mistakes, learn from them and work your way up from there. Throughout this document we will try to clarify many of these rules. Please, don't close this document after this first section.
+
+
+Variable declaration in JavaScript has the following format.
+
+\begin{lstlisting}
+V name = statement;
+\end{lstlisting}
+Where $V \in \{let, const, var\}$
+
+
+Before ES6 we had only one keyword to define a variable and that was \texttt{var}.
+
+\begin{lstlisting}
+    > var a = 10;
+    undefined
+    > var b = 20;
+    undefined
+    > var c = a + b;
+    undefined
+    > c
+    30
+\end{lstlisting}
+
+Variables defined with \texttt{var} are scoped within its nearest parent function. If they are declreaded outside of functions, they will be part of the global scope. This means that variables defined with \texttt{var} are said to be lexical- or function scoped variables.
+
+This can be strange for people coming from languages using block scoping rules as the following examples indicates.
+
+\begin{lstlisting}
+var x = 20; 
+if (true) {
+  var x = 10; 
+}
+console.log(x)
+\end{lstlisting}
+
+The inner variable \texttt{x} is defined again within a \texttt{if} block but also exists outside of it. In this example we are using \texttt{var}, thus the variable is functioned scoped in is therefore assigned to the global scope. The final \texttt{console.log} will print out the value 10, not 20 as one might expect. This can sometimes cause "strange" behaviours in application for developers that are not familiar with such scoping rules.
+
+To bypass this, two new keywords were introduced in ES6 to define variables: \texttt{let} and \texttt{const}. \texttt{let} is similar to \texttt{var} but it has a tighter scoping rule. \texttt{let} variables are limited in scope to the block, statement, or expression on which it is used. When writing ES6 style code, you should always pick \texttt{let} over \texttt{var}.
+
+
+\begin{lstlisting}
+'use strict';
+
+let x = 20;
+if (true) {
+  let x = 10;
+}
+console.log(x)
+\end{lstlisting}
+
+In this example we use \texttt{let} to define the inner variable and it is therefore scoped within that block. The value printed out in this example is 20.
+
+Also new in ES6 is \texttt{const}. The difference between \texttt{let} and \texttt{const} is that \texttt{let} variables can be changed (that is, the value that they point to) but \texttt{const} variables don't. You should always try to define your variables as \texttt{const} variables for program consistency and correctness. If a given variable should not change, why then define in such a way that some other part of code could accidentally change it?
+
+Here are two examples how \texttt{let} and \texttt{const} are used.
+
+\begin{lstlisting}
+    > let a = 20;
+    > const b = 30;
+\end{lstlisting}
+
+Note that \texttt{const} is not the same as constant. When you you use \texttt{const} you can change the value which the pointer points to, but you can change the object it points to if it is a mutable object.
+
+Next we look at types in JavaScript.
+

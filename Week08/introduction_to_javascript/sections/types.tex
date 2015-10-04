@@ -1,0 +1,306 @@
+\section{Types}\label{sec:types}
+In JavaScript there are six primitive data types.
+\begin{itemize}
+\item Number
+\item Boolean
+\item String
+\item Null
+\item Undefined
+\item Symbol (new in ES6)\footnote{We do not discuss this type here but readers intereseted in knowing more about this new type please take a look at \url{http://blog.keithcirkel.co.uk/metaprogramming-in-es6-symbols/}}
+\item Object
+\end{itemize}
+
+We also have functions, but in JavaScript functions are said to be "callable" objects and are therefore objects. We discuss functions in section~\ref{sec:functions}.
+
+There is nothing to wait for, let us go through these types and get familiar with them.
+
+\subsection{Numbers}\label{sub:numbers}
+In JavaScript there is only one number type, namely \texttt{Number}. If you open the REPL and type in a number, you will get the number back as following listing indicates.
+
+\begin{lstlisting}
+> 42
+42
+> 34.3
+34.3
+\end{lstlisting}
+
+There is no difference between float, doable or integers in JavaScript. They are all represented by the same type, and that type is \texttt{Number}. Numbers are represented with 64 bits and  some of these bits are used for the fractional part of the number, even if the value does not have a fractional part. Also bit is taken for representing negative numbers. Thus, the highest value to store in a number is $2^{31} - 1$.
+
+This is a common pitfall in JavaScript when developers are trying to represent 64 bits values as numbers.
+
+In \texttt{Number} there is a constant called \texttt{MAX\_VALUE} that can be used to view the maximum value that can be stored in a \texttt{Number} type.
+
+\begin{lstlisting}
+> Number.MAX_VALUE
+1.7976931348623157e+308
+\end{lstlisting}
+
+In JavaScript you can look up the type of a given value using the `typeof` operator.
+
+\begin{lstlisting}
+> typeof 1337.42
+'number'
+\end{lstlisting}
+
+We can apply all the well known mathematical operators on Numbers. They are similar to the once we have in C or Java.
+
+\begin{lstlisting}
+> 42 + 4.2
+46.2
+> 2 * 34
+68
+> 7 / 23
+0.30434782608695654
+> 2 - (-3)
+5
+\end{lstlisting}
+
+The precedence of operators are also similar as in C or Java. You can view a table of the precedence of operators at \url{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence}.
+
+In JavaScript you have access to a global object named \texttt{Math}. In \texttt{Math} you get access to many mathematical constants and functions to use in your calculations. There is a good overview at \url{https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Math}
+
+\begin{lstlisting}
+> Math.sqrt(25)
+5
+> Math.pow(2, 4)
+16
+\end{lstlisting}
+
+There is a global constant in the \texttt{Number} object called \texttt{NaN}. NaN stands for ``Not a Number''. If you are doing some funky calculations or you are mixing types that cannot be interpreted as numbers in your calculations, you will get \texttt{NaN} as the result.
+
+\begin{lstlisting}
+> 34 / "a"
+NaN
+
+> 34 + NaN / 34
+NaN
+\end{lstlisting}
+
+\texttt{NaN} is contagious in expressions. If any part of the expression is \texttt{NaN}, the whole expression becomes \texttt{NaN}.
+
+A funny joke in the JavaScript community: the type of \texttt{NaN} is \texttt{Number}.
+
+\begin{lstlisting}
+> typeof NaN
+'number'
+\end{lstlisting}
+
+There is another global value that you might see if you are doing shady calculations, and that is \texttt{Infinity}
+
+\begin{lstlisting}
+> typeof Infinity
+'number'
+\end{lstlisting}
+
+If you interested in math, then this statement will probably not make your day.
+
+\begin{lstlisting}
+> 5 / 0
+Infinity
+\end{lstlisting}
+
+Don't drink and drive -- and don't create a programming language under the same influence.
+
+There are two functions that you can use to check if value is \texttt{NaN} and \texttt{Infinity}, \texttt{Number.isNaN} and \texttt{Number.isFinite} respectively.
+
+\begin{lstlisting}
+> isNaN(10)
+false
+> isNaN(3 / "bob")
+true
+> isFinite(5/0)
+false
+> isFinite(30 + 2)
+true
+\end{lstlisting}
+
+Word of advice. JavaScript is not the ``best'' programming language for scientific calculations. It was not create for that purpose. Validate your calculations, write tests for them and watch out for large numbers. Keep it safe.
+
+\subsection{Boolean}
+JavaScript has a \texttt{boolean} type. There are exactly two values that \texttt{boolean} can have, that is \texttt{true} and \texttt{false}.
+
+\begin{lstlisting}
+    > true
+    true
+    > false
+    false
+    > typeof true
+    'boolean'
+    > typeof false
+    'boolean'
+\end{lstlisting}
+
+JavaScript supports the same boolean operators as C and Java.
+
+\begin{lstlisting}
+    > true && false
+    false
+    > false || true
+    true
+    > (false || true) && true
+    true
+\end{lstlisting}
+
+The boolean operators always return a \texttt{boolean} value.
+
+As in similar programming languages, \texttt{boolean} can be used when controlling the flow in our programs when we use \texttt{if}, \texttt{while} and such. We look the flow control in section n.
+
+
+\subsection{String}
+A stream of characters in JavaScript within single quotes, or double quotes, are of the type \texttt{string}.
+
+\begin{lstlisting}
+    > "hello js"
+    'hello js'
+    > typeof 'hello js'
+    'string'
+\end{lstlisting}
+
+Strings in JavaScript are immutable. When a string has been created it cannot be changed. All methods that work with strings return a new string.
+
+\begin{lstlisting}
+    > "Hello" + "world"
+    'Helloworld'
+\end{lstlisting}
+
+In this example we are concatenating two strings, the result is a new string.
+
+Oh yeah, while we are at it. It is time for some strange drunken ``programming language decisions'' rant. When you add together a string and a number, you get a string back.
+
+\begin{lstlisting}
+    > 2 + "2"
+    '22'
+\end{lstlisting}
+
+JavaScript is trying to be smart, and typecasts the number into a string. This happens when a language is dynamically- and loosely typed with an ambiguous `+` operator dangling around. Well, we can forgive that. But in subtraction it is different.
+
+\begin{lstlisting}
+    > 2 - "3"
+    -1
+    > "3" - 2
+    1
+\end{lstlisting}
+
+Here it is the opposite. The string is represented as a number. So be careful mixing types when you are doing calculations and when concatenating strings. You can always parse the values yourself using the global functions \texttt{parseInt}, \texttt{parseFloat}. Also, Numbers can be represented as Strings with `.toString()`
+
+\begin{lstlisting}
+    > (12).toString()
+    '12'
+\end{lstlisting}
+
+The \texttt{string} type has many functions that you are likely familiar with from other programming languages. The MDN entry at \url{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String} is comprehensive and describes them well. You can look for string functions there when you need them. The following listing shows couple of them in action.
+
+\begin{lstlisting}
+    > "hello world today".split(' ')
+    [ 'hello', 'world', 'today' ]
+    > 'bobby cakes'.indexOf('c')
+    6
+    > 'hlysig'.startsWith('h')
+    true
+    > 'hlysig!'.toUpperCase()
+    'HLYSIG!'
+\end{lstlisting}
+
+
+\subsection{Null and Undefined}
+There are two types to represent ``nothing'' in JavaScript and that is \texttt{null} and \texttt{undefined}. They are not the same and they have different semantics in the language.
+
+First, \texttt{null} is actually not a type in JavaScript but a global object.
+
+\begin{lstlisting}
+> typeof null
+'object'
+\end{lstlisting}
+
+Whereas \texttt{undefined} is a type.
+
+\begin{lstlisting}
+> typeof undefined
+'undefined'
+\end{lstlisting}
+
+\texttt{undefined} means that you have declare a variable that has not been assigned yet, or the return value from a function that has not return value. We introduce variables and functions in sections n and n, but here are two examples that helps us understand \texttt{undefined}.
+
+\begin{lstlisting}
+> let b;
+undefined
+> b
+undefined
+> b === undefined
+true
+\end{lstlisting}
+
+\begin{lstlisting}
+> function noReturnValue() {console.log('hello');}
+undefined
+> noReturnValue() === undefined
+hello
+true
+\end{lstlisting}
+
+\texttt{null} on the other hand is a value that you can sign to a variable or return from a function that represents ``nothing''. You will only see \texttt{null} if you use it yourself.
+
+\begin{lstlisting}
+> let a = null;
+undefined
+> a
+null
+> a === null
+true
+\end{lstlisting}
+
+The semantics here is that you are stating that this variables points to nothing. But behind the scenes, this variable is pointing to the global object \texttt{null}.
+
+You should always try to avoid using \texttt{null} as much as you avoid drinking gasoline. To back that sentence up we give a citation to Sir Charles Antony Richard Hoare and his famous sentence ``Null References, The Billion Dollar Mistake''. We know that he apologised later, but functional programmers still have that sentence tattooed on their forehead. Just be careful when using \texttt{null}.
+
+\subsection{Objects}
+JavaScript is a Prototype-based programming language\footnote{\url{https://en.wikipedia.org/wiki/Prototype-based_programming}}. That is a different approach to Object Oriented Programming \footnote{\url{https://en.wikipedia.org/wiki/Object-oriented_programming}} where object behaviour is reused through Prototype chains\footnote{\url{http://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/}}. In this course we will not deal so deep with JavaScript objects nor do much OOP programming in it. If anything, we will do more functional style programming.
+
+This does not mean that we will not use objects, far from it. We will mostly be creating objects, using the object literal notation, for encapsulating data, grouping common data together and as a associative array.
+
+If you are interested in learning more about Object-Oriented programming in JavaScript
+
+We encourage students who are interested in learning more about Object-Oriented programming in JavaScript to do so. The internet is full of great material on that subject. We have added some handpicked articles in section~\ref{sec:references}.
+
+Now let's look at objects. To define an object using literal notation we use \texttt{\{\}}.
+
+\begin{lstlisting}
+const entry = {
+  title: 'Concerning Hobbits',
+  content: 'They have hairy toes'
+};
+\end{lstlisting}
+
+In this example we define variable which points to an instance of an object. Objects have many simularities to associative arrays and can be used as such. Objects have collections of keys, in this example we have the keys \texttt{title} and \texttt{content} and properties which they point to.
+
+Properties can be fetched with the `.` operator on the object using the key.
+
+\begin{lstlisting}
+> entry.title
+'Concerning Hobbits'
+\begin{lstlisting}
+
+We can also place the key into brackets.
+
+\begin{lstlisting}
+> entry['title']
+'Concerning Hobbits'
+\end{lstlisting}
+
+This can be useful when the keys have spaces or strange characters in them.
+
+Properties in objects can be of any type even another object or a function.
+
+JSON (JavaScript Object Notation) is a formal description how JavaScript object can be serialized back and forth from objects to strings. There is a global object named `JSON` that we can use for that purpose, as following listing indicates.
+
+\begin{lstlisting}
+> var x = {'data': 'hello world'}
+> let jsdata = JSON.stringify(x)
+> jsdata
+'{"data":"hello world"}'
+> JSON.parse(jsdata)
+{ data: 'hello world' }
+\end{lstlisting}
+
+In this example we create an object. We serialize it to JSON and then we take that JSON and we serialize it back to object. We will be doing this heavily in this course where our web services will be returing JSON data and accepting JSON data.
+

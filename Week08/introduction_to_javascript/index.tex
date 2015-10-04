@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{courier}
+\usepackage{url}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage[parfill]{parskip}
+
+\author{Hlynur Sigurthorsson (hlysig@gmail.com)}
+\title{
+  \textbf{Introduction to JavaScript with Node.js for the course 2015-T-514-VEF} \\
+  \large document version 0.1
+}
+
+% Code listing configuration.
+\definecolor{light-gray}{gray}{0.95}
+\lstset{columns=fullflexible,basicstyle=\small\ttfamily}
+\surroundwithmdframed[
+  hidealllines=true,
+  backgroundcolor=light-gray,
+  innerleftmargin=10pt,
+  innertopmargin=8pt,
+  innerbottommargin=0pt]{lstlisting}
+
+\begin{document}
+\maketitle
+\clearpage
+\tableofcontents
+\include{sections/introduction}
+\include{sections/javascript}
+\include{sections/nodejs}
+\include{sections/variables}
+\include{sections/types}
+\include{sections/functions}
+\include{sections/arrays}
+\include{sections/comparison}
+\include{sections/flow_control}
+\include{sections/reading_material}
+\end{document}

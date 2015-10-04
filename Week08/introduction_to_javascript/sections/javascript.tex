@@ -1,0 +1,33 @@
+\section{JavaScript}\label{sec:javascript}
+JavaScript\footnote{Standardized as ECMAScript} is described as a loosely- and dynamically typed scripting language which can be used within different environments. Let's dissect this sentence and understand what this ``name-dropping'' means.
+
+First, JavaScript is dynamically typed. When we declare a variable, write a literal or construct an expression, the type is inferred. This means that we do not create variables of particular type. We can simply assign a value to it and use it. In the following code we declare a variable \texttt{x} and we assign the literal \texttt{10} to it.
+
+\begin{lstlisting}
+let x = 10;
+\end{lstlisting}
+
+The type of the variable \texttt{x} will be of type \texttt{number}. This is the inverse of Strongly Typed Programming languages such as, C and Java, where you must state types of variables when being defined.
+
+Second, JavaScript is loosely typed. Thus, the type of a given variable can be changed after being defined. At one point a given variable can be of type \texttt{Number} and couple of lines later the type of it might be changed to a \texttt{String}, as following listing indicates.
+
+\begin{lstlisting}
+let x = 42;
+// some lines of code
+x = 'hlysig';
+\end{lstlisting}
+
+It can be tempting to use this feature to save memory or to hold temporary values between data transformations -- but be careful. You might think that your variable is of a certain type when it is not. This is the cause of many JavaScript errors. In section x we introduce two ways to declare variables using \texttt{let} and \texttt{const}, where the pointers of \texttt{const} variables cannot be changed -- you should always begin by declaring your variables with \texttt{const} and argue if they should be changed into \texttt{let}. Avoid this language feature at all cost if you want to reason about your program correctness.
+
+JavaScript is a scripting language. This means that your JavaScript code is not compiled to machine language instructions. The code is interpreted on-the-fly. This is similar to languages such Python and Ruby. 
+
+Let us go back to the days when we were learning C/C++. We wrote couple of lines and then the compiler barked at you if the syntax was incorrect. In JavaScript this is different. The interpreter will execute your program even if there are errors in it, and fails on the first error. 
+
+Skipping the ``write-compile-run'' you feel more productive when writing code but be warned. The compiler knows the programming language better than you and having him around telling you what you are doing wrong is a valuable thing. Code paths that are executed seldom in JavaScript might at some point be executed and exactly there, you misspelled something and your application crashes. 
+
+In programming languages, such as in JavaScript, you need to do the compilers work and rigorously write tests for your code to convince yourself that it is working as expected.
+
+At last. JavaScript is a formally defined language without an environment. JavaScript can be embedded into different context. The most used one is within a web browser. But lately, JavaScript is being use to write server-side application with environments such as Node.js and io.js and within other applications, such as Adobe PhotoShop to write plug-ins or in Unity3d to write 3D applications. Investing time to learn JavaScript will pay-off where JavaScript can be applied in many different contexts and, it seems, is on a roll.
+
+In this course we write JavaScript server-side to implement HTTP APIs and for that we use the Node.js environment.
+

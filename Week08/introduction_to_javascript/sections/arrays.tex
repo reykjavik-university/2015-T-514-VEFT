@@ -1,0 +1,89 @@
+\section{Array}\label{sec:arrays}
+In this section we introduce the Array object in JavaScript.
+
+\subsection{Create array}
+To create an empty array in JavaScript we use \texttt{[]} as the following example indicates
+
+\begin{lstlisting}
+> const a = [];
+undefined
+> a
+[]
+\end{lstlisting}
+
+We can also initialize the array with values by placing them between the brackets.
+
+\begin{lstlisting}
+> const a = [1, 2, 3, 4];
+undefined
+> a
+[ 1, 2, 3, 4 ]
+\end{lstlisting}
+
+In JavaScript you can mix objects of different types into the array. They are not bound to any type.
+
+\begin{lstlisting}
+> [1, 'hlysig', '2', {}]
+[ 1, 'hlysig', '2', {} ]
+\end{lstlisting}
+
+\subsection{Array operations}
+Arrays in JavaScript are 0-based. That is, the first value in the array has the index zero. We can fetch values from they array by the index as follows.
+
+\begin{lstlisting}
+> const a = ['hlysig', 'f00', 'yeah']
+undefined
+> a[1]
+'f00'
+\end{lstlisting}
+
+If you select an out-of-bounds index, then you will get \texttt{undefined} back.
+
+The Array object has many functions to to operate over an array instance. There is an exceilent article on that on the MDN\footnote{\url{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array}}. But in the following listings we will show a hand fill of them.
+
+The \texttt{slice} method returns a shallow copy of a portion of an array into a new array object.
+\begin{lstlisting}
+> a
+[ 'hlysig', 'f00', 'yeah' ]
+> a.slice(-1)
+[ 'yeah' ]
+> a.slice(0, 1)
+[ 'hlysig' ]
+\end{lstlisting}
+
+The \texttt{length} property returns the length of the array.
+\begin{lstlisting}
+> a.length
+3
+\end{lstlisting}
+
+The \texttt{indexOf} returns the index of a given value within the array.
+
+\begin{lstlisting}
+> a.indexOf('f00')
+1
+\end{lstlisting}
+
+The \texttt{map} function receives a function and maps that function over each element of the array and returns a new array.
+
+\begin{lstlisting}
+> const d = [1, 2, 3, 4];
+undefined
+> d.map((v) => v+2)
+[ 3, 4, 5, 6 ]
+\end{lstlisting}
+
+The \texttt{forEach} function iterates over the whole array. This function accepts a call-back function which is called for each element in the array
+
+\begin{lstlisting}
+> d.forEach(function(v) {
+    console.log(v)
+})
+1
+2
+3
+4
+\end{lstlisting}
+
+When you need some specific array operation, please look at the MDN article on Arrays. You will most likely find it there.
+

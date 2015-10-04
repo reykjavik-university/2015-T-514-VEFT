@@ -1,0 +1,78 @@
+\section{Node.js}\label{sec:nodejs}
+Node.js\footnote{\url{https://nodejs.org/en/}} is an open source JavaScript runtime environment for writing server-side network and web applications. It is a cross-platform solution and exists on all major operating systems.
+
+Node.js provides an event-driven architecture and a non-blocking I/O API designed to optimize an application's throughput and scalability for real-time web applications. It uses Google V8 JavaScript engine to execute code, and a large percentage of the basic modules are written in JavaScript. Node.js contains a built-in library to allow applications to act as a web server without software such as Apache HTTP Server, Nginx or IIS.
+
+Non-blocking and asynchronous I/O means that the execution of your code will not wait for I/O call are finished. All I/O operations will be dispatched to the Operating System and Node.js will notify us, through call-backs when they are finished.
+
+Let's see an example.
+
+\begin{lstlisting}
+setTimeout(() => {
+  console.log('Hello node');
+}, 2000);
+console.log('boom');
+\end{lstlisting}
+
+In this example we call the \texttt{setTimeout} method. When this method is called the application dispatches an event to the operating system and asks it for an interrupt after two seconds. When that happens, the call-back function is called.
+
+Here, Node.js will not stop and wait for two seconds. It will simply add it to the event queue and continue it's execution. Remember, it never waits for I/O.
+
+When we execute this application we get the following output.
+\begin{lstlisting}
+boom
+// wait for 2 seconds
+hello node
+\end{lstlisting}
+
+All I/O calls in Node.js work that way. So what are I/O calls? All network handling, reading from the hard-drive and waiting for interrupts.
+
+By using this model, Node.js is able to handle millions of connections (depending on hardware, connection and operating system).
+
+Now, Node.js is single threaded. This is all fine where all the I/O operation is dispatched asynchronously. But code that is not asynchronous can have a dramatic impact of the performance. If you write a simple socket server in Node.js and on every connection you start looping through large lists in memory that takes time, then that can have a dramatic impact on incoming connections to your server.
+
+\subsection{Installing Node.js}
+How you install Node.js depends on your operating system. The latest version can be downloaded from \url{https://nodejs.org/en/download/}.
+
+My personal preferred way is to download compiled binaries for my operating system, unpack it and add it to path. By doing this I have control over where I put the binaries, it will not get scattered around my operating system and I can easily remove it for a different version later.
+
+Let's got through how that is done. Note that this will only work on Unix-like operating systems. Begin by going to the above mentioned page and download the correct binaries for you operating system. In this example I will store the downloaded file in my home folder.
+
+\begin{lstlisting}
+cd /Users/hlysig
+wget nodejs.org/dist/v4.1.1/node-v4.1.1-darwin-x64.tar.gz
+\end{lstlisting}
+
+Next we inflate the tar-ball and rename it to .node
+\begin{lstlisting}
+tar xzvf node-v4.1.1-*-x64.tar.gz
+mv node-v4.1.1-*-x64 .node
+\end{lstlisting}
+
+Now I have the Node.js binaries in ~/Users/hlysig/.node and the only thing left is to add it's bin folder to the path environment variable.
+
+\begin{lstlisting}
+echo "export PATH=\"$HOME/.node/bin:$PATH"\" >> .bashrc
+\end{lstlisting}
+
+Next I restart my shell and after that I have the commands \texttt{node} and \texttt{npm} available in the shell.
+\begin{lstlisting}
+λ ~/ node --version
+v4.1.1
+λ ~/ npm --version
+2.14.4
+\end{lstlisting}
+If you see similar output, then you have successfully installed Node.js on your machine.
+
+In this document we use features defined in ECMAScript 6\footnote{\url{http://www.ecma-international.org/ecma-262/6.0/}}. Many of the features within that standard were not available until version 4.x.x of Node.js. Thus be sure to install the latest version to be able to follow the examples in this document.
+
+
+\subsection{Running JavaScript code with Node.js}
+If you run \texttt{node} then you go into an interactive prompt called REPL. REPL stands for Read-Evaluate-PrintLine and is a shell where you can write in expression and the value of it will be printed out on the screen. You can write the examples in this documents directly into the REPL to try them out. REPL is a great tool when you need to test simple expression when developing.
+
+You can also pass a filename into \texttt{node} with JavaScript code. Add the following line into a file named hello.js.
+\begin{lstlisting}
+console.log('Hello Node');
+\end{lstlisting}
+
+You can then run with \texttt{node hello.js}. Now let's learn some JavaScript.
