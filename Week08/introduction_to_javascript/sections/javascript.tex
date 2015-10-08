@@ -1,15 +1,17 @@
 \section{JavaScript}\label{sec:javascript}
 JavaScript\footnote{Standardized as ECMAScript} is described as a loosely- and dynamically typed scripting language which can be used within different environments. Let's dissect this sentence and understand what this ``name-dropping'' means.
 
+\subsection{Dynamic typing}
 First, JavaScript is dynamically typed. When we declare a variable, write a literal or construct an expression, the type is inferred. This means that we do not create variables of particular type. We can simply assign a value to it and use it. In the following code we declare a variable \texttt{x} and we assign the literal \texttt{10} to it.
 
 \begin{lstlisting}
 let x = 10;
 \end{lstlisting}
 
-The type of the variable \texttt{x} will be of type \texttt{number}. This is the inverse of Strongly Typed Programming languages such as, C and Java, where you must state types of variables when being defined.
+The type of the variable \texttt{x} will be of type \texttt{number}. This is the inverse of Strongly Typed Programming languages such as, C and Java, where you must state types of variables when they are declared.
 
-Second, JavaScript is loosely typed. Thus, the type of a given variable can be changed after being defined. At one point a given variable can be of type \texttt{Number} and couple of lines later the type of it might be changed to a \texttt{String}, as following listing indicates.
+\subsection{Loosely typing}
+Second, JavaScript is loosely typed. The type of a given variable can be changed after it has been declared. At one point a given variable can be of type \texttt{Number} and later in the program the type of it can be changed to a \texttt{String} for example.
 
 \begin{lstlisting}
 let x = 42;
@@ -17,17 +19,19 @@ let x = 42;
 x = 'hlysig';
 \end{lstlisting}
 
-It can be tempting to use this feature to save memory or to hold temporary values between data transformations -- but be careful. You might think that your variable is of a certain type when it is not. This is the cause of many JavaScript errors. In section x we introduce two ways to declare variables using \texttt{let} and \texttt{const}, where the pointers of \texttt{const} variables cannot be changed -- you should always begin by declaring your variables with \texttt{const} and argue if they should be changed into \texttt{let}. Avoid this language feature at all cost if you want to reason about your program correctness.
+It can be tempting to use this feature for mutation states of data or to save memory, but be careful. It is easy to loose track of the types if they are changing throughout your code. This is the cause of many JavaScript errors. In section~\ref{sec:variables} we introduce two ways to declare variables using \texttt{let} and \texttt{const}, where the pointers of \texttt{const} variables cannot be changed. You should always begin by declaring your variables with \texttt{const} and argue if they should be changed into \texttt{let}. Avoid misusing this language feature at all cost if you want to be able reason about your program correctness.
 
-JavaScript is a scripting language. This means that your JavaScript code is not compiled to machine language instructions. The code is interpreted on-the-fly. This is similar to languages such Python and Ruby. 
+\subsection{Scripting language}
+JavaScript is a scripting language. This means that JavaScript code is not compiled to machine language instructions or to a byte-code as we know from C or C\#. The code is interpreted on-the-fly. This is similar to languages such Python and Ruby.
 
-Let us go back to the days when we were learning C/C++. We wrote couple of lines and then the compiler barked at you if the syntax was incorrect. In JavaScript this is different. The interpreter will execute your program even if there are errors in it, and fails on the first error. 
+Let us go back to the days when we were learning C/C++. We wrote couple of lines and then the compiler barked at us if the syntax was incorrect. In JavaScript this is different. The interpreter will execute your program even if there are errors in it. The only thing that you can be sustain of is that the program execution will stop when the first error occurs during execution.
 
-Skipping the ``write-compile-run'' you feel more productive when writing code but be warned. The compiler knows the programming language better than you and having him around telling you what you are doing wrong is a valuable thing. Code paths that are executed seldom in JavaScript might at some point be executed and exactly there, you misspelled something and your application crashes. 
+By skipping the ``write-compile-run'' cycle we feel more productive when writing code -- but let us be warned. The compiler knows the programming language better than us and having him around telling us what we are doing wrong is a valuable thing. Code paths that are executed seldom in JavaScript might at some point be executed and there, we misspelled something.
 
-In programming languages, such as in JavaScript, you need to do the compilers work and rigorously write tests for your code to convince yourself that it is working as expected.
+In programming languages, such as in JavaScript, we need to do the compiler work and rigorously write tests for our code to convince ourself that it is working as expected and is correct.
 
-At last. JavaScript is a formally defined language without an environment. JavaScript can be embedded into different context. The most used one is within a web browser. But lately, JavaScript is being use to write server-side application with environments such as Node.js and io.js and within other applications, such as Adobe PhotoShop to write plug-ins or in Unity3d to write 3D applications. Investing time to learn JavaScript will pay-off where JavaScript can be applied in many different contexts and, it seems, is on a roll.
+\subsection{Standardized and environment-free}
+At last. JavaScript is a standardized language without an environment. JavaScript can be embedded into different context. The most used one is within a web browser. But lately, JavaScript is being use to write server-side application with environments such as Node.js\footnote{\url{https://nodejs.org}} and io.js\footnote{\url{https://iojs.org}}. It has also been used within mainstream Application as plug-in or as a scripting language. As an example we can name Adobe PhotoShop to write plug-ins or in Unity3d\footnote{\url{https://unity3d.com/}} to write 3D applications. Investing time in learning JavaScript can be beneficial where JavaScript is applied in many different contexts and, it seems, it is on a roll.
 
 In this course we write JavaScript server-side to implement HTTP APIs and for that we use the Node.js environment.
 
