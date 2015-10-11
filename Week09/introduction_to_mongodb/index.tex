@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{courier}
+\usepackage{url}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage[parfill]{parskip}
+
+\def \currentVersion {0.1}
+
+\author{Hlynur Sigurthorsson (hlysig@gmail.com)}
+\date{}
+\title{
+  \textbf{Introduction to MongoDB for the course 2015-T-514-VEF} \\
+  \large document version \currentVersion
+}
+
+% Code listing configuration.
+\definecolor{light-gray}{gray}{0.95}
+\lstset{columns=fullflexible,basicstyle=\small\ttfamily}
+\surroundwithmdframed[
+  hidealllines=true,
+  backgroundcolor=light-gray,
+  innerleftmargin=10pt,
+  innertopmargin=8pt,
+  innerbottommargin=0pt]{lstlisting}
+
+\begin{document}
+\maketitle
+\clearpage
+\tableofcontents
+\include{sections/introduction}
+\include{sections/nosql_and_mongodb}
+\include{sections/installing_mongodb}
+\include{sections/starting_up_mongodb_locally}
+\include{sections/mongodb_terminology}
+\include{sections/the_mongo_shell}
+\include{sections/using_mongodb_in_nodejs}
+\end{document}

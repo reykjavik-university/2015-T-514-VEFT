@@ -1,0 +1,237 @@
+\section{The Mongo shell}\label{sec:the_mongo_shell}
+MongoDB includes an application called the ``Mongo shell'' and can be started with \texttt{mongo}. With this shell we can connect and manage a MongoDB instances. This shell is equipped with the Google's JavaScript V8 machine which allows us to write JavaScript code in it. The shell is handy when we are trying out various queries and when we need to inspect our data. Where the shell speaks JavaScript the shell can also be useful when trying out various commands and for altering data that has been added to the database.
+
+To connect to your local MongoDB node, open up a new shell and type in \texttt{mongo}. If the \texttt{mongod} daemon is running on your local machine the Mongo shell will connect to it. When opened, you should get a similar prompt as in the NodeJS REPL.
+
+Now let's step through the basic commands in this shell.
+
+\texttt{help} is a useful command to know. It shows you help.
+
+\begin{lstlisting}
+> help
+  db.help()                    help on db methods
+  db.mycoll.help()             help on collection methods
+  sh.help()                    sharding helpers
+  rs.help()                    replica set helpers
+  ...
+\end{lstlisting}
+
+With \texttt{help} you get a list of available commands and of various global object available.
+
+The global object \texttt{db} points the database we are currently connected to.
+
+\begin{lstlisting}
+> db
+test
+\end{lstlisting}
+
+If you haven't changed \texttt{db}, you should be connected to a database called test by default.
+
+To change database, we use the command \texttt{use}.
+
+\begin{lstlisting}
+> use myapp;
+switched to db myapp
+> db
+myapp
+\end{lstlisting}
+
+We can see available databases using the command \texttt{show dbs}
+
+\begin{lstlisting}
+> show dbs
+local  0.078GB
+\end{lstlisting}
+
+What is interesting here is that we don't see the database that we just applied \texttt{use} on. In MongoDB things ``kind-of'' happen on the fly. The database we just applied \texttt{use} on (the myapp database) will not be created until we create the first document in it. We do not need to create the database specifically, we will use it and it will exist after that.
+
+This is different from many RDBS such as PostgreSQL where we need to apply \texttt{CREATE DATABASE} statements before we can use a given database.
+
+The command \texttt{show collections} will show us the available collections within the database that we are connected to. If you run \texttt{show collections} on the myapp database you will not get anything back -- where we haven't created any collections yet.
+So let's add some data to our database.
+
+\subsection{Inserting data}
+Let's add some data to our database. We are currently connected to database named myapp. You can type \texttt{db} in the shell to verify which database you are connected to.
+
+In this example we are writing a To-Do application, thus the data that we are inserting will reflect that.
+
+First we want to store todo documents in a collection named todo within our database and we add a single todo document.
+
+The document that we want to add is the following.
+\begin{lstlisting}
+{
+  text: "Take out the trash!",
+  category: "Home",
+  created: new Date(),
+  status: {done: false, critical: true}
+}
+\end{lstlisting}
+
+This document might be coming from a post method in an API. But for now, let's insert that document using the MongoDB shell.
+
+\begin{lstlisting}
+> db.todo.insert({
+  text: "Take out the trash!",
+  category: "Home",
+  created: new Date(),
+  status: {done: false, critical: true}
+});
+WriteResult({ "nInserted" : 1 })
+\end{lstlisting}
+
+Now if you do \texttt{show dbs} we see that our database myapp has been created. Also, if you do \texttt{show collections} we see that the collection todo has been created.
+
+Now if we do a count on the todo collections we get the correct count of documents, namely $1$.
+
+\begin{lstlisting}
+> db.todo.count()
+1
+\end{lstlisting}
+
+The Mongo shell understands JavaScript. Thus we can write JavaScript code that inserts or updates, multiple documents.
+
+\begin{lstlisting}
+for(var i=0; i < 10 ; i=i + 1) {
+  db.todo.insert({
+    text: "task " + i,
+    category: "Home",
+    created: new Date(),
+    status: {done: false, critical: true}
+  });
+}
+\end{lstlisting}
+
+Here we loop 10 times and we add a new document in each iteration.
+
+If we paste this into the Mongo shell and we do a count we should get the following output.
+
+\begin{lstlisting}
+> db.todo.count()
+11
+\end{lstlisting}
+
+We can use the function \texttt{find()} on the collection to fetch back all the documents added to that collection.
+
+\begin{lstlisting}
+{ "_id" : ObjectId("561aabca50aa6c82f001ff2d"), "text" : "Take out the trash!", "category" : "Home", "created" : ISODate("2015-10-11T18:34:50.487Z"), "status" : { "done" : false, "critical" : true } }
+{ "_id" : ObjectId("561aac3550aa6c82f001ff2e"), "text" : "task 0", "category" : "Home", "created" : ISODate("2015-10-11T18:36:37.571Z"), "status" : { "done" : false, "critical" : true } }
+{ "_id" : ObjectId("561aac3550aa6c82f001ff2f"), "text" : "task 1", "category" : "Home", "created" : ISODate("2015-10-11T18:36:37.572Z"), "status" : { "done" : false, "critical" : true } }
+...
+\end{lstlisting}
+
+We can also import documents from a file using an application named \texttt{mongoimport}. Please look at \texttt{mongoimport --help} to show the options for that command in your shell.
+
+
+\subsection{Query}
+To fetch data back from our database we use the command \texttt{find}. With \texttt{find} we can fetch either all data from a given collection or filter on document fields. Note that find applies only over a single single collection. Thus you cannot \texttt{find} over multiple collections.
+
+We briefly touch on the topic of querying. We suggest that students look at \url{http://docs.mongodb.org/manual/tutorial/query-documents/} after reading this document.
+
+\texttt{find} returns a iterable cursor. Thus, if the result set is to large you must iterate over multiple chunks.
+
+Now let's fetch all the documents that we have added into the todo collection.
+
+\begin{lstlisting}
+ > db.todo.find()
+ { "_id" : ObjectId("561a56aa597632d63731114e"), "text" : "Take out the trash!", "category" : "Home", "timestamp" : ISODate("2015-10-11T12:31:38.557Z") }
+ { "_id" : ObjectId("561a56b0597632d63731114f"), "text" : "task 0", "category" : "Home", "timestamp" : ISODate("2015-10-11T12:31:44.590Z") }
+ { "_id" : ObjectId("561a56b0597632d637311150"), "text" : "task 1", "category" : "Home", "timestamp" : ISODate("2015-10-11T12:31:44.591Z") }
+ { "_id" : ObjectId("561a56b0597632d637311151"), "text" : "task 2", "category" : "Home", "timestamp" : ISODate("2015-10-11T12:31:44.593Z") }
+ ...
+\end{lstlisting}
+
+Here we can see the documents that we have added to the collection. One thing to note, the \_id property. When a given document is added and we don't include an id for that document, MongoDB well add a unique id to that document.
+
+To filter out documents of interest we can provide the `find` function with a query parameter on the form
+
+\begin{lstlisting}
+{ <field1>: <value1>, <field2>: <value2>, ... }
+\end{lstlisting}
+
+If the field is a top-level field and not a field in an embedded document or an array, you can either enclose the field name in quotes or omit the quotes.
+
+If the field is in an embedded document or an array, use dot notation to access the field. With dot notation, you must enclose the dotted name in quotes.
+
+For the examples below we use the following data to our database.
+\begin{lstlisting}
+db.users.insert({
+    username: 'bob',
+    name: 'Bobby Tables',
+    age: 26,
+    tags: ['hacker', 'programmer'],
+    avatar: {
+        'fg': '#ffff',
+        'bg': '#dadada'
+    }
+});
+
+db.users.insert({
+    username: 'alice',
+    name: 'Alice Tree',
+    age: 30,
+    tags: ['developer', 'programmer'],
+    avatar: {
+        'fg': '#c3c3c3',
+        'bg': '#FAFAFA'
+    }
+});
+
+db.users.insert({
+    username: 'eve',
+    name: 'Eve Boyle',
+    age: 15,
+    tags: ['script', 'bot'],
+    avatar: {
+        'fg': '#fefefe',
+        'bg': '#fafafa'
+    }
+});
+\end{lstlisting}
+
+Add them to your database if you want to try out the queries which follow.
+
+\subsubsection{Query by a top-level document field}
+Let's kick-off with a top-level document field query. Top level field is a field that is not embedded in another document within the document. For example, in the documents above the fields username and name are top-level fieldswhere as fg and bg are not top-level fields.
+
+Now let's query for a document where the property \texttt{username} is equal to the string \texttt{bob}
+
+\begin{lstlisting}
+> db.users.find({username: 'bob'})
+{ "_id" : ObjectId("561a6fc4b970ca5092eed32b"), "username" : "bob", "name" : "Bobby Tables", "age" : 26, "tags" : [ "hacker", "programmer" ], "avatar" : { "fg" : "#ffff", "bg" : "#dadada" } }
+\end{lstlisting}
+
+As we can see, we get one document back the fulfills this query.
+
+If we want to search for multiple usernames we can do a logical or query using a special property \texttt{\$or}
+
+\begin{lstlisting}
+db.users.find({
+  $or: [{username: 'bob'}, {username: 'alice'}]
+});
+{ "_id" : ObjectId("561a6fc4b970ca5092eed32b"), "username" : "bob", "name" : "Bobby Tables", "age" : 26, "tags" : [ "hacker", "programmer" ], "avatar" : { "fg" : "#ffff", "bg" : "#dadada" } }
+{ "_id" : ObjectId("561a6fc4b970ca5092eed32c"), "username" : "alice", "name" : "Alice Tree", "age" : 30, "tags" : [ "developer", "programmer" ], "avatar" : { "fg" : "#c3c3c3", "bg" : "#FAFAFA" } }
+\end{lstlisting}
+
+We can also find documents by their ids as follows
+
+\begin{lstlisting}
+> db.users.find({_id: ObjectId("561a6fc4b970ca5092eed32b")})
+{ "_id" : ObjectId("561a6fc4b970ca5092eed32b"), "username" : "bob", "name" : "Bobby Tables", "age" : 26, "tags" : [ "hacker", "programmer" ], "avatar" : { "fg" : "#ffff", "bg" : "#dadada" } }
+\end{lstlisting}
+
+\subsubsection{Query by a nested document field}
+To query for a nested field we use query for the fields separated by a dot. For example, if we want to query for users with the fg value in avatar set to \#ffff
+
+\begin{lstlisting}
+> db.users.find({'avatar.fg': '#ffff'})
+{ "_id" : ObjectId("561aaea750aa6c82f001ff38"), "username" : "bob", "name" : "Bobby Tables", "age" : 26, "tags" : [ "hacker", "programmer" ], "avatar" : { "fg" : "#ffff", "bg" : "#dadada" } }
+\end{lstlisting}
+
+
+\subsubsection{Query by a Field in an Array}
+
+\begin{lstlisting}
+> db.users.find({'tags': {'$in': ['bot', 'developer']}})
+{ "_id" : ObjectId("561aaea750aa6c82f001ff39"), "username" : "alice", "name" : "Alice Tree", "age" : 30, "tags" : [ "developer", "programmer" ], "avatar" : { "fg" : "#c3c3c3", "bg" : "#FAFAFA" } }
+{ "_id" : ObjectId("561aaea750aa6c82f001ff3a"), "username" : "eve", "name" : "Eve Boyle", "age" : 15, "tags" : [ "script", "bot" ], "avatar" : { "fg" : "#fefefe", "bg" : "#fafafa" } }
+\end{lstlisting}

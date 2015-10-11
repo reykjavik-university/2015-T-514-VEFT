@@ -1,0 +1,44 @@
+\section{Using MongoDB with NodeJS}\label{sec:using_mongodb_with_nodejs}
+In this section we give a simple example how we can connect to a MongoDB database from NodeJS. For that we use the Node.js MongoDB Driver\footnote{\url{http://docs.mongodb.org/ecosystem/drivers/node-js/}}.
+
+First we need to install the drive with npm as follows.
+
+\begin{lstlisting}
+npm install mongodb --save
+\end{lstlisting}
+
+Next, we write a function for fetching all the todos which we added previously. Let's place that into a file called \texttt{todos.js} and add the following code.
+
+\begin{lstlisting}
+'use strict';
+
+const mongodb = require('mongodb');
+const MongoClient = mongodb.MongoClient;
+const mongoUrl = 'mongodb://localhost:27017/myapp';
+
+const getTodo = function(filter, cb) {
+
+  MongoClient.connect(mongoUrl, function(err, db) {
+    if (err) {
+      cb(err);
+      db.close();
+      return;
+    }
+
+    const collection = db.collection('todo');
+
+    collection.find(filter, function(err, docs) {
+      docs.toArray(function(err, d) {
+        cb(err, d);
+        db.close();
+      });
+    });
+  });
+};
+
+getTodo({}, function(err, docs) {
+  console.log(docs);
+});
+\end{lstlisting}
+
+This code will connect to your local MongoDB and fetch all the added todos.

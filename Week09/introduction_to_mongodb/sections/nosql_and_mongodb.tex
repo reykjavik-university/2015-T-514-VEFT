@@ -1,0 +1,16 @@
+\section{NoSQL and MongoDB}\label{sec:nosql_and_mongodb}
+MongoDB is an open source, NoSQL\footnote{\url{https://en.wikipedia.org/wiki/NoSQL}}, document-based database system which provides high performance, high availability, and automatic scaling.
+
+There are many ``buzz-words'' floating around here. Let us try to demystify them and understand their meaning. First, MongoDB is a NoSQL database. NoSQL is a term that has existed since circa 1960 and is an umbrella term for database which do not use traditional table relations as in Relational database management system (RDMS). This type of databases did not gain attraction until in the early twenty-first century with the rise of web 2.0 era. The driving force in that upswing were companies such as Facebook, Google and Amazon.
+
+The NoSQL approach provides simplicity of design which makes ``horizontal'' scaling to clusters of machines more simple than with the traditional relation database systems. However, many features from RDMS dropped in NoSQL databases, such as the ACID\footnote{\url{https://en.wikipedia.org/wiki/ACID}} model. Therefore, NoSQL databases tend to provide higher performance -- but they lack the data integrity provided by the major RDMS.
+
+NoSQL has it's purpose in life, so do SQL databases. Don't be fooled. NoSQL databases are not here to replace relational database. They both have a great purpose in life and solve different sets of problems. Think of them as a weapon of choice when creating your next application and not as a silver bullet within the field of database management systems.
+
+With many NoSQL databases, such as MongoDB, we do not think about data as rows in a table. Instead we think about data as documents. Therefore the relation algebra (SQL) does not apply. Instead we query for document of interest by their fields. These documents can be of any type (JSON, XML or other proprietary format). In MongoDB they are represented as JSON documents.
+
+MongodDB was created by MongoDB Inc as a Software as a service (SAAS) in 2007. The company shifted from that and decided to open source the database instead. Today they are offering commercial support and other services for MongoDB.
+
+MongoDB is used as a back-end database by a number of major websites and services, including eBay, Craigslist, FourSquare, LinkedIn and SAP to name a few.
+
+Enough said -- let us see MongoDB in action.

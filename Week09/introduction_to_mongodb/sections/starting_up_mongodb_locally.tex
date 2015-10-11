@@ -1,0 +1,20 @@
+\section{Starting up MongoDB locally}\label{sec:stargin_up_mongodb_locally}
+To start up a single instance node of MongoDB locally we use the \texttt{mongod} command.
+
+\texttt{mongod} is a highly configurable service, as \texttt{mongod --help} indicates. But for this tutorial we will execute it with default configuration. The only configuration parameter that we need to give is the \texttt{--dbpath} flag. With this flag we tell \texttt{mongod} where to store the database data and meta-data.
+
+In this document we use the folder \texttt{/tmp/data}. We need to create this folder before we start up \texttt{mongod}
+
+\begin{lstlisting}
+mkdir /tmp/data
+\end{lstlisting}
+
+The only requirement for this folder is that the \texttt{mongod} process has read and write access to it. You can select any folder that you want, but we use the above mentioned folder in the text.
+
+Now to start a single node run \texttt{mongod} as follows.
+
+\begin{lstlisting}
+mongod --dbpath /tmp/data
+\end{lstlisting}
+
+You should now have a local MongoDB node running on your machine listening to port $27019$.

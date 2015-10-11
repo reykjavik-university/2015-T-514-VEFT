@@ -1,0 +1,39 @@
+\section{Installing MongoDB}\label{sec:installing_mongodb}
+In this section we go through the steps needed for installing MongoDB server locally. MongoDB's documentation website\footnote{\url{http://docs.mongodb.org/}} includes great help on that matter. If these instructions do not work for your operating system then we suggest that you take a look at that documentation instead.
+
+After the install you should have at least two MongoDB commands available in your shell, \texttt{mongo} and \texttt{mongod}. After the install verify that these commands are available in your shell.
+
+\subsection{Ubuntu Linux}
+For Ubuntu we can use APT (Advanced Package Tool) to install MongoDB.Open up a terminal and type in the following lines.
+
+\begin{lstlisting}
+sudo apt-get update
+sudo apt-get install mongodb
+sudo update-rc.d -f mongodb remove
+sudo service mongodb stop
+\end{lstlisting}
+
+The last two lines disable MongoDB to start on a boot. If you want to start MongoDB on boot, skip the last two lines.
+
+\subsection{OSX}
+We can use Homebrew\footnote{\url{http://brew.sh/}} to install MongoDB as follows.
+
+\begin{lstlisting}
+brew install mongodb
+\end{lstlisting}
+
+We can also download pre-built binaries and add them to your PATH environment variable.
+\begin{lstlisting}
+cd
+wget https://fastdl.mongodb.org/osx/
+     mongodb-osx-x86_64-3.0.6.tgz
+tar xzvf mongodb-osx-x86_64-3.0.6.tgz
+\end{lstlisting}
+
+Then add the bin folder within the mongodb-osx-x86\_64-3.0.6 to your PATH variable as follows.
+
+\begin{lstlisting}
+export PATH="$HOME/mongodb-osx-x86_64-3.0.6/bin:$PATH"
+\end{lstlisting}
+
+You can add this line to your shell configuration.
