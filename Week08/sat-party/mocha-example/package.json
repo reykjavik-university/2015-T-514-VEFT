@@ -1,0 +1,19 @@
+{
+  "name": "foobar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R nyan",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "supertest": "^1.1.0"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
