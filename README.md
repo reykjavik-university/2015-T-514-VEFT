@@ -15,20 +15,20 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
  **Week 00:**
 >*Good to know*
 >
->[1. Git and GitHub](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week00/1.%20Git%20And%20GitHub.md#git-and-github)
+>[1. Git and GitHub](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week00/1.%20Git%20And%20GitHub.md#git-and-github)
 >
->[2. The Basics](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week00/1.%20Git%20And%20GitHub.md#the-basics)
+>[2. The Basics](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week00/1.%20Git%20And%20GitHub.md#the-basics)
 >
->[3. Tutorials](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week00/1.%20Git%20And%20GitHub.md#tutorials)
+>[3. Tutorials](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week00/1.%20Git%20And%20GitHub.md#tutorials)
 
 **Week 01:**
 >*1. Web Services*
 >
->[Historical background](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/1.%20Web%20Services.md#historical-background)
+>[Historical background](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/1.%20Web%20Services.md#historical-background)
 >
->[Types of web services](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/1.%20Web%20Services.md#types-of-web-services)
+>[Types of web services](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/1.%20Web%20Services.md#types-of-web-services)
 
->*2. REST*
+>*2. [REST](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/2.%20REST.md)*
 >
 >[REST Resources](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/2.%20REST.md#rest-services)
 >
