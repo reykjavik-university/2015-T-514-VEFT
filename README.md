@@ -10,8 +10,6 @@ repository, make changes you would like to see, and then issue a pull request. F
 If you fork this repository, and would later like to incorporate the latest changes into your own forked version, 
 check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 
-[There's also a book for last years course](https://github.com/reykjavik-university/2014-T-514-VEFT)
-
 ## Table of contents ##
 
 **Week 00:**
