@@ -305,7 +305,7 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 
 >**[1. NodeJS Unit tests](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week10/1.%20NodeJS%20Unit%20Test.md)**
 >
->**[Unit Testing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week10/1.%20NodeJS%20Unit%20Test.md#unit-testing)**
+>[Unit Testing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week10/1.%20NodeJS%20Unit%20Test.md#unit-testing)
 >
 >[How to install Mocha](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week10/1.%20NodeJS%20Unit%20Test.md#how-to-install-mocha)
 >
@@ -329,7 +329,7 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 **Week 11:**
 >**[1. Document Storage](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md)**
 >
->**[MongoDB](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#mongodb)**
+>[MongoDB](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#mongodb)
 >
 >[Data models](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#data-models)
 >
@@ -341,15 +341,15 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >
 >[Setup](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#setup)
 >
->**[Mongo](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#mongo)**
+>[Mongo](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#mongo)
 >
->**[Mongoose](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#mongoose)**
+>[Mongoose](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#mongoose)
 >
 >[Setup](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#setup-1)
 >
 >[Getting started](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#getting-started)
 >
->**[Validating in mongoose](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#validating-in-mongoose)**
+>[Validating in mongoose](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#validating-in-mongoose)
 >
 >[Simple validation](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#simple-validation)
 >
@@ -361,13 +361,13 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 
 >**[2. Elastic Search](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md)**
 >
->**[Elasticsearch](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#elasticsearch)**
+>[Elasticsearch](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#elasticsearch)
 >
 >[Download and install](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#download-and-install)
 >
 >[Indexing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#indexing)
 >
->**[Search](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#search)**
+>[Search](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#search)
 >
 >[Basic text search](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#basic-text-search)
 >
@@ -375,9 +375,9 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >
 >[Query by range on dates](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#query-by-range-on-dates)
 >
->**[Advanced key storing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#advanced-key-storing)**
+>[Advanced key storing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#advanced-key-storing)
 >
->**[Using Elasticsearch with MongoDB](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#using-elasticsearch-with-mongodb)**
+>[Using Elasticsearch with MongoDB](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#using-elasticsearch-with-mongodb)
 
 
 
