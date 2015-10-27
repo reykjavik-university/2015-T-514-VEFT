@@ -88,7 +88,7 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >
 >[Machine-readable documentation](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/6.%20API%20Documentation.md#machine-readable-documentation)
 
-**Week 02:**
+#Week 02:
 >**[1. Web Service Architecture](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/1.%20Web%20Service%20Architecture.md)**
 >
 >[Web Service Architecture](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/1.%20Web%20Service%20Architecture.md#web-service-architecture)
@@ -117,7 +117,7 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >
 >[NInject](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/3.%20Dependency%20Injection.md#ninject)
 
-**Week 03:**
+##Week 03:
 >**[1. LINQ](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/1.%20LINQ.md)**
 >
 >[LINQ](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/1.%20LINQ.md#linq)
@@ -148,8 +148,8 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >
 >[Fluent API](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/4.%20Fluent%20API.md#fluent-api)
 
-**Week 04:**
->**[Unit Testing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md)**
+***Week 04:***
+>**[1. Unit Testing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md)**
 >
 >[Unit Testing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md#unit-testing)
 >
