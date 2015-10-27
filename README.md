@@ -10,10 +10,12 @@ repository, make changes you would like to see, and then issue a pull request. F
 If you fork this repository, and would later like to incorporate the latest changes into your own forked version, 
 check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 
+[There's also a book for last years course](https://github.com/reykjavik-university/2014-T-514-VEFT)
+
 ## Table of contents ##
 
  **Week 00:**
->*Good to know*
+>*[Good to know](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week00/1.%20Git%20And%20GitHub.md#good-to-know)*
 >
 >[1. Git and GitHub](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week00/1.%20Git%20And%20GitHub.md#git-and-github)
 >
@@ -22,134 +24,150 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >[3. Tutorials](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week00/1.%20Git%20And%20GitHub.md#tutorials)
 
 **Week 01:**
->*1. Web Services*
+>*[1. Web Services](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/1.%20Web%20Services.md#web-services)*
 >
 >[Historical background](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/1.%20Web%20Services.md#historical-background)
 >
 >[Types of web services](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/1.%20Web%20Services.md#types-of-web-services)
 
->*2. [REST](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/2.%20REST.md)*
+>**[2. REST](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/2.%20REST.md)**
 >
->[REST Resources](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/2.%20REST.md#rest-services)
+>[REST Resources](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/2.%20REST.md#rest-resources)
 >
->[REST and HTTP](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/2.%20REST.md#rest-and-http)
+>[REST and HTTP](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/2.%20REST.md#rest-and-http)
 >
->[Using HTTP Verbs](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/2.%20REST.md#using-http-verbs)
+>[Using HTTP Verbs](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/2.%20REST.md#using-http-verbs)
 >
->[HTTP Status codes](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/2.%20REST.md#http-status-codes)
+>[HTTP Status codes](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/2.%20REST.md#http-status-codes)
 >
->[Versioning](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/2.%20REST.md#versioning)
+>[Response format](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/2.%20REST.md#response-format)
 >
->[REST Maturity Model](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/2.%20REST.md#rest-maturity-model)
+>[Versioning](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/2.%20REST.md#versioning)
 >
->[HATEOAS](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/2.%20REST.md#hateoas)
+>[REST Maturity Model](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/2.%20REST.md#rest-maturity-model)
 >
->[Further reading](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/2.%20REST.md#further-reading)
+>[HATEOAS](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/2.%20REST.md#hateoas)
+>
+>[Useful tools](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/2.%20REST.md#useful-tools)
+>
+>[Further reading](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/2.%20REST.md#further-reading)
 
->*3. SOAP*
+>*[3. SOAP](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/3.%20SOAP.md#soap)*
 >
+>[What](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/3.%20SOAP.md#what)
+>
+>[Why](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/3.%20SOAP.md#why)
+>
+>[REST vs SOAP](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/3.%20SOAP.md#rest-vs-soap)
+>
+>[Helpful resources](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/3.%20SOAP.md#helpful-resources)
 
->*4. ASP.NET Web API*
+>*[4. ASP.NET Web API](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/4.%20ASP.NET%20Web%20API.md#aspnet-web-api)*
 >
->[Architecture](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/3.%20ASP.NET%20Web%20API.md#aspnet-web-api)
+>[Architecture](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/4.%20ASP.NET%20Web%20API.md#architecture)
 >
->[JSON or XML?](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/3.%20ASP.NET%20Web%20API.md#json-or-xml)
+>[JSON or XML?](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/4.%20ASP.NET%20Web%20API.md#json-or-xml)
 >
->[CORS](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/3.%20ASP.NET%20Web%20API.md#cors)
+>[More on return values](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/4.%20ASP.NET%20Web%20API.md#more-on-return-values)
+>
+>[Returning errors](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/4.%20ASP.NET%20Web%20API.md#returning-errors)
+>
+>[CORS](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/4.%20ASP.NET%20Web%20API.md#cors)
 
->*5. Web API Routing*
+>*[5. Web API Routing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/5.%20Web%20API%20Routing.md)*
 >
->[Routing](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/4.%20Web%20API%20Routing.md#routing)
+>[Routing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/5.%20Web%20API%20Routing.md#routing)
 >
->[Parameters](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/4.%20Web%20API%20Routing.md#parameters)
+>[Parameters](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/5.%20Web%20API%20Routing.md#parameters)
 >
->[Parameters from the HTTP body](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/4.%20Web%20API%20Routing.md#parameters-from-the-http-body)
+>[Parameters from the HTTP body](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/5.%20Web%20API%20Routing.md#parameters-from-the-http-body)
 
->*6. API Documentation*
+>*[6. API Documentation](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/6.%20API%20Documentation.md)*
 >
->[API Documentation](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/5.%20API%20Documentation.md#api-documentation)
+>[API Documentation](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/6.%20API%20Documentation.md#api-documentation)
 >
->[Machine-readable documentation](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week01/5.%20API%20Documentation.md#machine-readable-documentation)
+>[Machine-readable documentation](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/6.%20API%20Documentation.md#machine-readable-documentation)
 
 **Week 02:**
->*1. Web Service Architecture*
+>*[1. Web Service Architecture](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/1.%20Web%20Service%20Architecture.md)*
 >
->[Web Service Architecture](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week02/6.%20Web%20Service%20Architecture.md#web-service-architecture)
+>[Web Service Architecture](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/1.%20Web%20Service%20Architecture.md#web-service-architecture)
 >
->[Entities, DTO and ViewModels](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week02/6.%20Web%20Service%20Architecture.md#entities-dto-and-viewmodels)
+>[Entities, DTO and ViewModels](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/1.%20Web%20Service%20Architecture.md#entities-dto-and-viewmodels)
 >
->[Project Setup](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week02/6.%20Web%20Service%20Architecture.md#project-setup)
+>[Project Setup](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/1.%20Web%20Service%20Architecture.md#project-setup)
 
->*2. Unit of Work*
+>*[2. Unit of Work](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/2.%20Unit%20of%20Work.md)*
 >
->[Unit of Work](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week02/7.%20Unit%20of%20Work.md#unit-of-work)
+>[Unit of Work](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/2.%20Unit%20of%20Work.md#unit-of-work)
 >
->[Command/Query Object Pattern](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week02/7.%20Unit%20of%20Work.md#commandquery-object-pattern)
+>[Command/Query Object Pattern](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/2.%20Unit%20of%20Work.md#commandquery-object-pattern)
 
->*3. Dependency Injection*
+>*[3. Dependency Injection](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/3.%20Dependency%20Injection.md)*
 >
->[Dependency Injection](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week02/8.%20Dependency%20Injection.md#dependency-injection)
+>[Dependency Injection](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/3.%20Dependency%20Injection.md#dependency-injection)
 >
->[Constructor Injection](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week02/8.%20Dependency%20Injection.md#constructor-injection)
+>[Constructor Injection](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/3.%20Dependency%20Injection.md#constructor-injection)
 >
->[Setter Injection](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week02/8.%20Dependency%20Injection.md#setter-injection)
+>[Setter Injection](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/3.%20Dependency%20Injection.md#setter-injection)
 >
->[Property Injection](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week02/8.%20Dependency%20Injection.md#property-injection)
+>[Property Injection](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/3.%20Dependency%20Injection.md#property-injection)
 >
->[Poor man's DI](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week02/8.%20Dependency%20Injection.md#poor-mans-di)
+>[Poor man's DI](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/3.%20Dependency%20Injection.md#poor-mans-di)
 >
->[NInject](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week02/8.%20Dependency%20Injection.md#ninject)
+>[NInject](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/3.%20Dependency%20Injection.md#ninject)
 
 **Week 03:**
->*1. LINQ*
+>*[1. LINQ](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/1.%20LINQ.md)*
 >
->[LINQ](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week03/9.%20LINQ.md#linq)
+>[LINQ](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/1.%20LINQ.md#linq)
 >
->[Materializing queries](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week03/9.%20LINQ.md#materializing-queries)
+>[Materializing queries](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/1.%20LINQ.md#materializing-queries)
 >
->[Accessing records - Single record](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week03/9.%20LINQ.md#single-record)
+>[Accessing records - Single record](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/1.%20LINQ.md#single-record)
 >
->[Accessing records - More than one](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week03/9.%20LINQ.md#more-then-one)
->[Join](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week03/9.%20LINQ.md#join)
+>[Accessing records - More than one](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/1.%20LINQ.md#more-than-one)
 >
->[Extending LINQ](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week03/9.%20LINQ.md#extending-linq)
+>[Join](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/1.%20LINQ.md#join)
+>
+>[Extending LINQ](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/1.%20LINQ.md#extending-linq)
 
->*2. Entity relationships*
+>*[2. Entity relationships](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/2.%20Entity%20relationships.md)*
 >
->[Entity relationships](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week03/10.%20Entity%20relationships.md#entity-relationships)
+>[Entity relationships](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/2.%20Entity%20relationships.md#entity-relationships)
 >
->[Entity Framework Relationships](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week03/10.%20Entity%20relationships.md#entity-framework-relationships)
+>[Entity Framework Relationships](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/2.%20Entity%20relationships.md#entity-framework-relationships)
 >
->[Loading options](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week03/10.%20Entity%20relationships.md#loading-options)
+>[Loading options](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/2.%20Entity%20relationships.md#loading-options)
 
->*3. Mapping*
+>*[3. Mapping](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/3.%20Mapping.md)*
 >
->[Mapping](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week03/11.%20Mapping.md#mapping)
+>[Mapping](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/3.%20Mapping.md#mapping)
 
->*4. Fluent API*
+>*[4. Fluent API](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/4.%20Fluent%20API.md)*
 >
->[Fluent API](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week03/12.%20Fluent%20API.md#fluent-api)
+>[Fluent API](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/4.%20Fluent%20API.md#fluent-api)
 
 **Week 04:**
->*Unit Testing*
+>*[Unit Testing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md)*
 >
->[Unit Testing](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week04/13.%20Unit%20testing.md#unit-testing)
+>[Unit Testing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md#unit-testing)
 >
->[Unit test setup](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week04/13.%20Unit%20testing.md#unit-test-setup)
+>[Unit test setup](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md#unit-test-setup)
 >
->[System Under Test](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week04/13.%20Unit%20testing.md#system-under-test)
+>[System Under Test](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md#system-under-test)
 >
->[Arrange/Act/Assert](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week04/13.%20Unit%20testing.md#arrangeactassert)
+>[Arrange/Act/Assert](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md#arrangeactassert)
 >
->[Test data](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week04/13.%20Unit%20testing.md#test-data)
+>[Test data](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md#test-data)
 >
->[Assert section](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week04/13.%20Unit%20testing.md#assert-section)
+>[Assert section](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md#assert-section)
 >
->[Exceptions in unit tests](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week04/13.%20Unit%20testing.md#exceptions-in-unit-tests)
+>[Exceptions in unit tests](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md#exceptions-in-unit-tests)
 >
->[Auto test generation](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week04/13.%20Unit%20testing.md#auto-test-generation)
+>[Auto test generation](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md#auto-test-generation)
 >
->[For/against](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week04/13.%20Unit%20testing.md#foragainst)
+>[For/against](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md#foragainst)
 
 **Week 05:**
 >*1 Globalization and Localization in ASP.NET*
