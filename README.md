@@ -24,7 +24,7 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >[3. Tutorials](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week00/1.%20Git%20And%20GitHub.md#tutorials)
 
 **Week 01:**
->*[1. Web Services](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/1.%20Web%20Services.md#web-services)*
+>**[1. Web Services](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/1.%20Web%20Services.md#web-services)**
 >
 >[Historical background](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/1.%20Web%20Services.md#historical-background)
 >
@@ -52,7 +52,7 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >
 >[Further reading](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/2.%20REST.md#further-reading)
 
->*[3. SOAP](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/3.%20SOAP.md#soap)*
+>**[3. SOAP](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/3.%20SOAP.md#soap)**
 >
 >[What](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/3.%20SOAP.md#what)
 >
@@ -62,7 +62,7 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >
 >[Helpful resources](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/3.%20SOAP.md#helpful-resources)
 
->*[4. ASP.NET Web API](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/4.%20ASP.NET%20Web%20API.md#aspnet-web-api)*
+>**[4. ASP.NET Web API](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/4.%20ASP.NET%20Web%20API.md#aspnet-web-api)**
 >
 >[Architecture](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/4.%20ASP.NET%20Web%20API.md#architecture)
 >
@@ -74,7 +74,7 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >
 >[CORS](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/4.%20ASP.NET%20Web%20API.md#cors)
 
->*[5. Web API Routing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/5.%20Web%20API%20Routing.md)*
+>**[5. Web API Routing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/5.%20Web%20API%20Routing.md)**
 >
 >[Routing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/5.%20Web%20API%20Routing.md#routing)
 >
@@ -82,14 +82,14 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >
 >[Parameters from the HTTP body](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/5.%20Web%20API%20Routing.md#parameters-from-the-http-body)
 
->*[6. API Documentation](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/6.%20API%20Documentation.md)*
+>**[6. API Documentation](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/6.%20API%20Documentation.md)**
 >
 >[API Documentation](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/6.%20API%20Documentation.md#api-documentation)
 >
 >[Machine-readable documentation](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/6.%20API%20Documentation.md#machine-readable-documentation)
 
 **Week 02:**
->*[1. Web Service Architecture](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/1.%20Web%20Service%20Architecture.md)*
+>**[1. Web Service Architecture](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/1.%20Web%20Service%20Architecture.md)**
 >
 >[Web Service Architecture](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/1.%20Web%20Service%20Architecture.md#web-service-architecture)
 >
@@ -97,13 +97,13 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >
 >[Project Setup](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/1.%20Web%20Service%20Architecture.md#project-setup)
 
->*[2. Unit of Work](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/2.%20Unit%20of%20Work.md)*
+>**[2. Unit of Work](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/2.%20Unit%20of%20Work.md)**
 >
 >[Unit of Work](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/2.%20Unit%20of%20Work.md#unit-of-work)
 >
 >[Command/Query Object Pattern](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/2.%20Unit%20of%20Work.md#commandquery-object-pattern)
 
->*[3. Dependency Injection](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/3.%20Dependency%20Injection.md)*
+>**[3. Dependency Injection](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/3.%20Dependency%20Injection.md)**
 >
 >[Dependency Injection](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/3.%20Dependency%20Injection.md#dependency-injection)
 >
@@ -118,7 +118,7 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >[NInject](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/3.%20Dependency%20Injection.md#ninject)
 
 **Week 03:**
->*[1. LINQ](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/1.%20LINQ.md)*
+>**[1. LINQ](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/1.%20LINQ.md)**
 >
 >[LINQ](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/1.%20LINQ.md#linq)
 >
@@ -132,7 +132,7 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >
 >[Extending LINQ](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/1.%20LINQ.md#extending-linq)
 
->*[2. Entity relationships](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/2.%20Entity%20relationships.md)*
+>**[2. Entity relationships](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/2.%20Entity%20relationships.md)**
 >
 >[Entity relationships](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/2.%20Entity%20relationships.md#entity-relationships)
 >
@@ -140,16 +140,16 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >
 >[Loading options](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/2.%20Entity%20relationships.md#loading-options)
 
->*[3. Mapping](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/3.%20Mapping.md)*
+>**[3. Mapping](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/3.%20Mapping.md)**
 >
 >[Mapping](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/3.%20Mapping.md#mapping)
 
->*[4. Fluent API](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/4.%20Fluent%20API.md)*
+>**[4. Fluent API](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/4.%20Fluent%20API.md)**
 >
 >[Fluent API](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/4.%20Fluent%20API.md#fluent-api)
 
 **Week 04:**
->*[Unit Testing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md)*
+>**[Unit Testing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md)**
 >
 >[Unit Testing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md#unit-testing)
 >
