@@ -14,8 +14,8 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 
 ## Table of contents ##
 
- **Week 00:**
->*[Good to know](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week00/1.%20Git%20And%20GitHub.md#good-to-know)*
+**Week 00:**
+>**[Good to know](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week00/1.%20Git%20And%20GitHub.md#good-to-know)**
 >
 >[1. Git and GitHub](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week00/1.%20Git%20And%20GitHub.md#git-and-github)
 >
@@ -88,7 +88,7 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >
 >[Machine-readable documentation](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week01/6.%20API%20Documentation.md#machine-readable-documentation)
 
-#Week 02:
+**Week 02:**
 >**[1. Web Service Architecture](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/1.%20Web%20Service%20Architecture.md)**
 >
 >[Web Service Architecture](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/1.%20Web%20Service%20Architecture.md#web-service-architecture)
@@ -117,7 +117,7 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >
 >[NInject](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week02/3.%20Dependency%20Injection.md#ninject)
 
-##Week 03:
+**Week 03:**
 >**[1. LINQ](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/1.%20LINQ.md)**
 >
 >[LINQ](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/1.%20LINQ.md#linq)
@@ -148,7 +148,7 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >
 >[Fluent API](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/4.%20Fluent%20API.md#fluent-api)
 
-###Week 04:
+**Week 04:**
 >**[1. Unit Testing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md)**
 >
 >[Unit Testing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md#unit-testing)
@@ -170,89 +170,139 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >[For/against](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md#foragainst)
 
 **Week 05:**
->*1 Globalization and Localization in ASP.NET*
+>**[1. Globalization and Localization in ASP.NET](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/1.%20Globalization%20and%20localization.md#globalization-and-localization-in-aspnet)**
 >
->[Introduction](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week05/Validation-L10N-Error-Tracing.md#introduction)
+>[Introduction](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/1.%20Globalization%20and%20localization.md#introduction)
 >
->[Detect user's language](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week05/Validation-L10N-Error-Tracing.md#detect-users-language)
+>[I18N, G11N and L10N](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/1.%20Globalization%20and%20localization.md#i18n-g11n-and-l10n)
 >
->[Multiple languages in web API](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week05/Validation-L10N-Error-Tracing.md#multiple-languages-in-web-api)
+>[Detect user's language](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/1.%20Globalization%20and%20localization.md#detect-the-language-of-the-user)
+>
+>[Multiple languages in web API](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/1.%20Globalization%20and%20localization.md#multiple-languages-in-web-api)
 
->*2. Validation*
+>**[2. Validation](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/2.%20Validation.md#validation)**
 >
->[Data Annotations](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week05/Validation-L10N-Error-Tracing.md#data-annotations)
+>[Data Annotations](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/2.%20Validation.md#data-annotations)
 >
->[Moving validation to service layer](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week05/Validation-L10N-Error-Tracing.md#moving-validation-to-service-layer)
+>[Moving validation to service layer](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/2.%20Validation.md#moving-validation-to-the-service-layer)
 >
->[Handling Validation Errors](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week05/Validation-L10N-Error-Tracing.md#handling-validation-errors)
+>[Handling Validation Errors](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/2.%20Validation.md#handling-validation-errors)
 
->*3. Exception Handling*
+>**[3. Exception Handling](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/3.%20Exception%20handling.md#exception-handling)**
 >
->[HttpResponseException](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week05/Validation-L10N-Error-Tracing.md#httpresponseexception)
+>[HttpResponseException](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/3.%20Exception%20handling.md#httpresponseexception)
 >
->[Exception Filters](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week05/Validation-L10N-Error-Tracing.md#exception-filters)
+>[Exception Filters](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/3.%20Exception%20handling.md#exception-filters)
 >
->[Logging unhandled exceptions](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week05/Validation-L10N-Error-Tracing.md#logging-unhandled-exceptions)
+>[Logging unhandled exceptions](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/3.%20Exception%20handling.md#logging-unhandled-exceptions)
 >
->[Global IExceptionHandler](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week05/Validation-L10N-Error-Tracing.md#global-iexceptionhandler)
+>[Global IExceptionHandler](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/3.%20Exception%20handling.md#global-iexceptionhandler)
 
->*4. Tracing*
+>**[4. Tracing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/4.%20Tracing.md#tracing)**
 >
->[Default Tracing](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week05/Validation-L10N-Error-Tracing.md#default-tracing)
+>[Default Tracing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/4.%20Tracing.md#default-tracing)
 >
->[Add traces to your code](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week05/Validation-L10N-Error-Tracing.md#add-traces-to-your-code)
+>[Add traces to your code](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/4.%20Tracing.md#add-traces-to-your-code)
 >
->[Creating Custom Trace Writer](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week05/Validation-L10N-Error-Tracing.md#creating-custom-trace-writer)
+>[Creating Custom Trace Writer](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/4.%20Tracing.md#creating-custom-trace-writer)
 
->*5. ELK*
+>**[5. ELK](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week05/5.%20ELK.md#the-elk-stack)**
 >
 
 **Week 06:**
->*1. Security*
+>**[1. OData](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/1.%20OData.md#odata)**
 >
->[OAuth](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week06/Security.md#oauth)
+>[OData](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/1.%20OData.md#odata)
 >
->[Oauth 1.0](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week06/Security.md#oauth-10)
+>[Querying Data](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/1.%20OData.md#querying-data)
 >
->[OAuth 2.0](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week06/Security.md#oauth-20)
->
->[OAuth and .NET](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week06/Security.md#oauth-and-net)
->
->[OpenID Connect](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week06/Security.md#openid-connect)
->
->[OpenID Connect basic specs](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week06/Security.md#openid-connect-basic-specs)
+>[OData and .NET](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/1.%20OData.md#odata-and-net)
 
->*2. OData*
->[OData](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week06/OData.md#odata)
+>**[2. Paging](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/2.%20Paging.md#paging)**
 >
->[Querying Data](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week06/OData.md#querying-data)
+>[Implementation in Web API](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/2.%20Paging.md#implementation-in-web-api)
+
+>**[3. Authentication and Authorization](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/3.%20Authentication%20and%20authorization.md#authentication-and-authorization)**
 >
->[OData and .NET](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week06/OData.md#odata-and-net)
+>[OAuth](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/3.%20Authentication%20and%20authorization.md#oauth)
+>
+>[Oauth 1.0](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/3.%20Authentication%20and%20authorization.md#oauth-10)
+>
+>[OAuth 2.0](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/3.%20Authentication%20and%20authorization.md#oauth-20)
+>
+>[OAuth and .NET](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/3.%20Authentication%20and%20authorization.md#oauth-and-net)
+>
+>[OpenID Connect](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/3.%20Authentication%20and%20authorization.md#openid-connect)
+>
+>[OpenID Connect basic specs](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/3.%20Authentication%20and%20authorization.md#openid-connect-basic-specs)
+
+>**[4. Security](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/4.%20Security.md#security)**
+>
+>[Common vulnerabilities](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/4.%20Security.md#common-vulnerabilities)
+>
+>[SQL injection](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/4.%20Security.md#sql-injection)
+>
+>[Cross-site scripting](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/4.%20Security.md#cross-site-scripting)
+>
+>[Cross-site Request Forgery](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/4.%20Security.md#cross-site-request-forgery)
+>
+>[Open Web Application Security Project](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/4.%20Security.md#open-web-application-security-project)
+>
+>[sqlmap](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week06/4.%20Security.md#sqlmap)
 
 **Week 07:**
->*1. Caching*
+>**[1. Caching](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week07/1.%20Caching.md#caching)**
 >
->[Caching](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week07/Caching.md#caching)
+>[Caching](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week07/1.%20Caching.md#caching)
 >
->[Web API caching](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week07/Caching.md#web-api-caching)
+>[Web API caching](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week07/1.%20Caching.md#web-api-caching)
 >
->[ETags](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week07/Caching.md#etags)
+>[ETags](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week07/1.%20Caching.md#etags)
 >
->[CacheCow](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week07/Caching.md#cachecow)
+>[CacheCow](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week07/1.%20Caching.md#cachecow)
 >
->[ASP.NET Web API CacheOutput](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week07/Caching.md#aspnet-web-api-cacheoutput)
+>[ASP.NET Web API CacheOutput](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week07/1.%20Caching.md#aspnet-web-api-cacheoutput)
 >
->[Custom Server side cache example](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week07/Caching.md#custom-server-side-cache-example)
+>[Custom Server side cache example](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week07/1.%20Caching.md#custom-server-side-cache-example)
 
 **Week 08:**
->*1. Node*
+>**[1. Microservices](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week08/1.%20Microservices.md)**
 >
->[NodeJS](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week09/NodeJS.md)
+>[Microservices](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week08/1.%20Microservices.md#microservices)
 
->*2. Express*
+>**[2. NodeJS and ECMASCript 6](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week08/2.%20NodeJS%20and%20ECMASCript%206.md)**
 >
 
 **Week 09:**
+
+>**[1. NodeJS](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week09/1.%20NodeJS.md)**
+>
+>[Node.js](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week09/1.%20NodeJS.md#nodejs)
+>
+>[How to install Node.js](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week09/1.%20NodeJS.md#how-to-install-nodejs)
+>
+>[Nodejs shell](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week09/1.%20NodeJS.md#nodejs-shell)
+>
+>[Node.js is single threaded and asynchronous](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week09/1.%20NodeJS.md#nodejs-is-single-threaded-and-asynchronous)
+>
+>[Echo server](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week09/1.%20NodeJS.md#echo-server)
+>
+>[Web service in node.js](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week09/1.%20NodeJS.md#web-service-in-nodejs)
+
+>**[2. Express](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week09/2.%20Express.md#express)**
+>
+>[Download and install](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week09/2.%20Express.md#download-and-install)
+>
+>[Middleware](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week09/2.%20Express.md#middleware)
+>
+>[Lets dance](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week09/2.%20Express.md#lets-dance)
+>
+>[MEAN Stack](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week09/2.%20Express.md#mean-stack)
+>
+>[Helpful resources](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week09/2.%20Express.md#helpful-resources)
+
+
+>
 >*1. MongoDB*
 >
 
@@ -274,30 +324,88 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 
 **Week 10:**
 
->*1. NodeJS Unit tests*
+>**[1. NodeJS Unit tests](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week10/1.%20NodeJS%20Unit%20Test.md)**
 >
+>[Unit Testing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week10/1.%20NodeJS%20Unit%20Test.md#unit-testing)
+>
+>[How to install Mocha](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week10/1.%20NodeJS%20Unit%20Test.md#how-to-install-mocha)
+>
+>[The node JS function under test](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week10/1.%20NodeJS%20Unit%20Test.md#the-node-js-function-under-test)
+>
+>[Running Mocha](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week10/1.%20NodeJS%20Unit%20Test.md#running-mocha)
 
->*2. Message Queues*
+>**[2. Message Queues](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week10/2.%20Message%20Queues.md)**
 >
->[RabbitMQ](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week11/RabbitMQ.md#rabbitmq)
+>[RabbitMQ](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week10/2.%20Message%20Queues.md#rabbitmq)
 >
->[Installing RabbitMQ](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week11/RabbitMQ.md#installing-rabbitmq)
+>[Installing RabbitMQ](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week10/2.%20Message%20Queues.md#installing-rabbitmq)
 >
->[Example 1](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week11/RabbitMQ.md#example-1)
+>[Example 1](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week10/2.%20Message%20Queues.md#example-1)
 >
->[Message acknowledgment](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week11/RabbitMQ.md#message-acknowledgment)
+>[Message acknowledgment](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week10/2.%20Message%20Queues.md#message-acknowledgment)
 >
->[Message durability](https://github.com/reykjavik-university/2014-T-514-VEFT/blob/master/Week11/RabbitMQ.md#message-durability)
+>[Message durability](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week10/2.%20Message%20Queues.md#message-durability)
 
 
 **Week 11:**
->*1. Deployment*
+>**[1. Document Storage](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md)**
 >
+>[MongoDB](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#mongodb)
+>
+>[Data models](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#data-models)
+>
+>[Indexes](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#indexes)
+>
+>[Replication](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#replication)
 
->*2. Docker*
+>[Sharding](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#sharding)
 >
+>[Setup](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#setup)
+>
+>[Mongo](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#mongo)
+>
+>[Mongoose](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#mongoose)
+>
+>[Setup](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#setup-1)
+>
+>[Getting started](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#getting-started)
+>
+>[Validating in mongoose](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#validating-in-mongoose)
+>
+>[Simple validation](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#simple-validation)
+>
+>[Regular expression](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#regular-expression)
+>
+>[Asynchronous validation](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#asynchronous-validation)
+>
+>[Built in validators.](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/1.%20Document%20Storage.md#built-in-validators)
+
+>*[2. Elastic Search](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md)*
+>
+>[Elasticsearch](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#elasticsearch)
+>
+>[Download and install](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#download-and-install)
+>
+>[Indexing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#indexing)
+>
+>[Search](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#search)
+>
+>[Basic text search](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#basic-text-search)
+>
+>[Query in list](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#query-in-list)
+>
+>[Query by range on dates](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#query-by-range-on-dates)
+>
+>[Advanced key storing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#advanced-key-storing)
+>
+>[Using Elasticsearch with MongoDB](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week11/2.%20ElasticSearch.md#using-elasticsearch-with-mongodb)
+
+
 
 
 **Week 12:**
->*1. Microservices*
+>*[1. Deployment](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week12/1.%20Deployment.md)*
+>
+
+>*[2. Docker](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week12/2.%20Docker.md)*
 >
