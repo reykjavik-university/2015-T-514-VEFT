@@ -148,7 +148,7 @@ check out [this tutorial](https://help.github.com/articles/syncing-a-fork).
 >
 >[Fluent API](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week03/4.%20Fluent%20API.md#fluent-api)
 
-***Week 04:***
+###Week 04:
 >**[1. Unit Testing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md)**
 >
 >[Unit Testing](https://github.com/reykjavik-university/2015-T-514-VEFT/blob/master/Week04/1.%20Unit%20testing.md#unit-testing)
