@@ -10,7 +10,8 @@ To begin with one way is to set up the project by running ```npm init```.
 After we have run the npm init command we get few steps that we need to go through, such as *name, version, description, entry point (which file starts the application), test command, git repo, keywords and license.* You can fill this out as suits you best and just press enter/return if you don’t want to fill out that specific field.
 Once filled out you need to review the fields you put in and need to type in yes if you are happy with the result.
 
-Once this step is done you should have initialised an empty project and created the file ```package.json``` which describes your project. 
+Once this step is done you should have initialised an empty project and created the file ```package.json``` which describes your project.
+Add this command to initialize the empty file you want to work on: ```touch index.js``` (index.js being the name of the file).
 
 
 ####2.
@@ -54,6 +55,8 @@ Header of the GET command:
 Simple POST command to url /todo:
 *curl -XPOST -d “{\”title\”: \”take trash out\”}” -H “Content-Type: Application/json” http://localhost:4000/todo*
 
+
+if you want to prettify your json result you can add this after your curl command: ```| python -m json.tool```
 
 **eslint modifications:**
 ~root/ node_modules/eslint/bin/eslint.js —init
