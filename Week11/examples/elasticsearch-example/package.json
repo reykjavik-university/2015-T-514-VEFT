@@ -1,0 +1,20 @@
+{
+  "name": "xx",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "hlysig <hlysig@gmail.com> (http://0x.is)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "elasticsearch": "^8.2.0",
+    "express": "^4.13.3",
+    "node-uuid": "^1.4.3"
+  },
+  "devDependencies": {},
+  "description": ""
+}

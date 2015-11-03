@@ -1,0 +1,8 @@
+  curl -XPOST http://localhost:4000/api/feed/32f39757ed18dec1864c7409e58afac07bf718b4 -d '{
+    "author_id": "ab1b6377aee3209d9d487526a5172b51bba8504c",
+    "content": "I like apples, do you like them"
+  }' -H "content-type: Application/json"
+
+  curl -XPOST http://localhost:4000/api/feed/search -d '{
+    "search": "h"
+  }' -H "content-type: Application/json"
