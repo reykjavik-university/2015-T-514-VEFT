@@ -43,7 +43,7 @@ class Test(BasePart):
                                                 headers=headers).json()
 
             if 'id' in fetched_company:
-                fetched_company_id = fetched_company.get('_id')
+                fetched_company_id = fetched_company.get('id')
             elif '_id' in fetched_company:
                 fetched_company_id = fetched_company.get('_id')
             elif '__id' in fetched_company:
