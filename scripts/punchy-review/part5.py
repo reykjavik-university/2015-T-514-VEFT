@@ -3,7 +3,7 @@ from base import BasePart
 
 
 class Test(BasePart):
-    """POST /companies/:id - 20 %"""
+    """DELETE /companies/:id - 20 %"""
     tests = [
         ('verify_company_not_found_404', 5),
         ('verify_company_is_deleted', 5),
